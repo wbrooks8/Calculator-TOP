@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+
+        h1 {
+            position: relative;
+            margin: auto;
+            font-size: 80px;
+            left: 38vw;
+        }
+
+        #calculator {
+            background-color: grey;
+            width: 30vw;
+            height: 48vh;
+            margin: auto;
+            position: relative;
+            top: 20vh;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto;
+            align-content: end;
+            justify-content: space-evenly;
+        }
+
+        #display {
+            position: absolute;
+            top: 2vh;
+            width: 24vw;
+            height: 10vh;
+            left: 1vw;
+            padding-top: 1.5vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            margin: auto;
+            background-color: white;
+            text-align: right;
+            font-size: 70px;
+        }
+
+        .buttons {
+            background-color: darkgrey;
+            font-size: 30px;
+            text-align: center;
+            width: 6.5vw;
+            height: 6vh;
+            border: 2px solid black;
+            padding: 4px;
+        }
+
+        .top {
+            margin-top: 20px;
+        }
+
+        .buttons:hover {
+            background-color: rgb(201, 201, 201);
+        }
+        
+        .buttons:active{
+            background-color: rgb(194, 194, 194);
+            background: #e5e5e5;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+        }
+
+    </style>
+    <title>
+
+    </title>
+</head>
+<body>
+    <h1> Calculator </h1>
+    <div id="calculator">
+        <div id="one" class="buttons" class="top" onclick="one(1)">1</div>
+        <div id="two" class="buttons" class="top" onclick="one(2)">2</div>
+        <div id="three" class="buttons" class="top" onclick="one(3)">3</div>
+        <div id="add" class="buttons" onclick="addition()">+</div>
+        <div id="four" class="buttons" onclick="one(4)">4</div>
+        <div id="five" class="buttons" onclick="one(5)">5</div>
+        <div id="six" class="buttons" onclick="one(6)">6</div>
+        <div id="subtract" class="buttons" onclick="subtract()">-</div>
+        <div id="seven" class="buttons" onclick="one(7)">7</div>
+        <div id="eight" class="buttons" onclick="one(8)">8</div>
+        <div id="nine" class="buttons" onclick="one(9)">9</div>
+        <div id="multiply" class="buttons" onclick="multiply()">*</div>
+        <div id="zero" class="buttons" onclick="one(0)">0</div>
+        <div id="display" class="buttons">0</div>
+        <div id="clear" class="buttons" onclick="myFunction2()">C</div>
+        <div id="equal" class="buttons" onclick="equal()">=</div>
+        <div id="divide" class="buttons" onclick="divide()">/</div>
+        
+
+<p id="demo"></p>
+    </div>
+
+    <script src="script.js">  
+        
+    </script>
+</body>
